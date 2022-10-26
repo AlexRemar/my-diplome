@@ -23,21 +23,8 @@ ul {
 
 @media (min-width: 1200px) {
 
-  .all {
-  width: 72vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-}
 
 /*=Header=*/
-.wrapper {
-  display: flex;
-  margin: auto;
-  min-width: 1200px;
-}
-
 .page-header {
   background-image: url("../Images/banner-bg.jpg");
   background-repeat: no-repeat;
@@ -48,24 +35,27 @@ ul {
   height: 450px;
   z-index: 0;
   text-align: center;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .header-logo {
-  display: flex;
   height: 41px;
-  margin-left: 248px;
   -moz-appearance: none; 
   -webkit-appearance: none;          
   appearance: none;
   background-image: url(../SVG/noemi-logo.svg);
   background-repeat: no-repeat;
   padding-left: 178px;
+  margin-right: auto;
+  margin-right: 523px;
 }
 
 .menu-container {
   display: flex;
-  justify-content: space-between;
+  width: 1200px;
+  justify-content: center;
 }
 
 .page-header::after{
@@ -83,7 +73,7 @@ ul {
 .header-menu {
   display: flex;
   padding-top: 10.5px;
-  margin-right: 245px;
+  margin-left: auto;
   flex-wrap: wrap;
   
 }
@@ -100,6 +90,10 @@ ul {
   text-decoration: none;
 }
 
+.menu-item:hover {
+  text-decoration: underline;
+}
+
 .title {
   color: #ffffff;
   font-family: OpenSans-B, sans-serif;
@@ -108,6 +102,10 @@ ul {
   text-decoration: none;
   line-height: 1.7em;
   margin-top: 105px
+}
+
+.title-wrapper-basic {
+  width: 680px;
 }
 
 /*=TRENDS=*/
@@ -163,7 +161,6 @@ ul {
 	display: flex;
 	min-width: 100%;
   justify-content: space-between;
-
 }
 
 
@@ -207,29 +204,39 @@ ul {
     background-image: url("../Images/trend4.jpg");
 }
 
-
 .trend-item {
 	display: flex;
+  flex-wrap: wrap;
+}
+
+.blog-bottom:hover {
+  text-decoration: underline;
 }
 
 
-
-
 /*=BLOG=*/
+  .all {
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
 
 .content-wrapper {
   display: flex;
   justify-content: center;
-  margin: 63px auto;
+  margin-top: 63px;
+  margin-bottom: 63px;
 }
 
 .main-page {
-  width: 54.5vw;
+  width: 47vw;
+  max-width: 782px;
+  margin-right: 126px;
 }
 
 .blog-component {
   display: flex;
-  margin-right: 6.5vw;
 }
 
 .blog-component:not(:last-child) {
@@ -238,7 +245,8 @@ ul {
 
 .all-text {
   margin-left: 2vw;
-  width: 21vw;
+  width: 22vw;
+  max-width: 365px;
 }
 
 .blog-name {
@@ -254,13 +262,17 @@ ul {
 .blog-item {
   text-transform: uppercase;
   color: #b59f5b;
-  font-size: 0.9vw;
+  font-size: 0.8vw;
   font-family: OpenSans-B, sans-serif;
   text-decoration: none;
 }
 
 .blog-title {
   margin-bottom: 1.4vw;
+}
+
+.blog-link:hover {
+  color: #b59f5b;
 }
 
 .blog-link {
@@ -307,6 +319,11 @@ ul {
   line-height: 1.2em;
 }
 
+.blog-img {
+  width: 23vw;
+  background-color: white;
+}
+
 
 /*=ASIDE=*/
 .mini-post {
@@ -324,6 +341,7 @@ ul {
 
 .right-menu {
   width: 16vw;
+  max-width: 292px;
   margin-top: -5px;
 }
 
@@ -334,7 +352,7 @@ ul {
 .post-item {
   text-transform: uppercase;
   color: #000000;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: OpenSans-B, sans-serif;
   text-decoration: none;
   text-align: center;
@@ -354,11 +372,14 @@ ul {
   
 .post-img {
   display: flex;
+  background-color: white;
+  width: 70px;
+  height: 70px;
 }
 
 .post-text {
   color: #000000;
-  font-size: 0.9vw;
+  font-size: 0.8vw;
   font-family: OpenSans-B, sans-serif;
   text-decoration: none;
   line-height: 1em;
@@ -422,7 +443,7 @@ ul {
 .right-title {
   text-transform: uppercase;
   color: #000000;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: OpenSans-B, sans-serif;
   text-decoration: none;
   text-align: center;
@@ -462,7 +483,7 @@ ul {
   cursor: pointer;
   text-transform: uppercase;
   color: #ffffff;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: OpenSans-B, sans-serif;
   text-decoration: none;
   text-align: center;
@@ -489,27 +510,28 @@ ul {
   font-size: 0.7vw;
   font-family: OpenSans-B, sans-serif;
   text-decoration: none;
-  text-align: center;
+  font-weight: 700;
 }
 
 .teg-botton {
-  height: 1.5vw;
+  padding: 0px 0.8vw;
   outline: 3px solid #eeeeee;
-  margin-right: 0.7vw;
-  margin-bottom: 12px;
-  padding: 0px 0.9vw;
+  margin-bottom: 0.8vw;
   text-align: center;
+  margin-right: 0.7vw;
 }
 
 .tegs {
   margin-top: 25px;
+  max-width: 16vw;
   display: flex;
   flex-wrap: wrap;
-  height: 6.4vw;
+  max-height: 6.3vw;
+  text-align: center;
 }
 
-.teg-botton:hover {
-  background-color: #f4f3f1;
+.teg-item:hover {
+  color: #0f0d0e;
 }
 
 /*=Themes=*/
@@ -519,7 +541,7 @@ ul {
 
 .themes-item {
   color: #0f0d0e;
-  font-size: 1vw;
+  font-size: 0.8vw;
   font-family: OpenSans-B, sans-serif;
   text-decoration: none;
 }
@@ -536,7 +558,7 @@ ul {
 
 .badge {
   color: #b59f5b;
-  font-size: 1vw;
+  font-size: 0.7vw;
   font-family: OpenSans-B, sans-serif;
   text-decoration: none;
   margin-left: 4px;
@@ -551,7 +573,16 @@ ul {
   margin-top: 23px;
 }
 
+.themes-item:hover {
+  color: #b59f5b;
+}
+
 /*=PRODUCTS=*/
+.product-img {
+  width: 18vw;
+  height: 12.5vw;
+  background-color: white;
+}
 
 .post-item-product {
   text-transform: uppercase;
@@ -579,29 +610,32 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 1200px;
 }
 
 .product-component {
   width: 20.8vw;
+  max-width: 345px;
   margin: auto 2vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  flex-grow: 1;
+  
 }
 
 .product-wrapper {
   display: flex;
-  justify-content: center;
-  width: 72vw;
 }
 
 .shop-text {
+  display: flex;
+  flex-direction: column;
   border: 3px solid #b59f5b;
-  padding: 48px 26px 150px;
+  padding: 3.2vw 1.2vw 2.9vw 1.2vw;
   margin-top: -2vw;
   width: 21vw;
-  height: 16vw;
+  min-height: 16vw;
+  max-width: 345px;
   flex-grow: 1;
 }
 
@@ -664,6 +698,9 @@ ul {
   text-decoration: none;
 }
 
+.product-link:hover {
+  text-decoration: underline;
+}
 
 .cost-bottom-max {
 	font-size: 1.2vw;
@@ -701,11 +738,12 @@ ul {
 
 .social-wrapper {
   width: 72vw;
+  max-width: 1200px;
 }
 
 .social-address {
   padding: 30px;
-  background-color: #eeeeee;
+  background-color: #f4f7f6;
 }
 
 .dribble {
@@ -780,7 +818,6 @@ ul {
   background-repeat: no-repeat;
   background-position: center center;
   cursor: pointer;
-
 }
 
 .cross-wrapper {
