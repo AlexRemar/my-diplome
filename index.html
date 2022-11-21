@@ -11,6 +11,9 @@
 <header class="page-header">
 <menu class="menu-container">
 <a class="header-logo" href="#0"></a>
+<div class="menu-burger-header">
+    <span></span>
+</div>
 <nav>
 	<ul class="header-menu">
 		<li class="menu-bottom"><a class="menu-item" href="#0">Главная</a>
@@ -273,7 +276,7 @@
 
 <section class="search-mailing"> 
 <form class="search">
-	<input class="search-text" type="search" placeholder="Найти..." required>
+	<input class="search-text" type="search" placeholder="Найти..." required><span class="hidden-text">Поле ввода поиска</span>
 	<button type="submit" class="search-icon"><span class="hidden-text">Кнопка поиска</span></button>
 </form> 
 </section>
@@ -282,7 +285,7 @@
 <section class="subscribe">
 <h3 class="right-title">рассылка</h3>  
 <form class="email">
-	<input type="email" class="email-text" placeholder="Ваш email-адрес" required>
+	<input type="email" class="email-text" placeholder="Ваш email-адрес" required><span class="hidden-text">Поле ввода email</span>
 	<button class="email-botton">подписаться</button>
 </form>
 </section>
@@ -337,6 +340,7 @@
 <div class="product-wrapper">
 <article class="product-component-first">
 <picture class="product-img">
+<source srcset="Images/shop-item-tablet1.jpg" media="(min-width: 641px) and (max-width: 1199px)">
 <source srcset="Images/shop-item-desk1.jpg" media="(min-width: 1200px)">
 <img src="Images/shop-item-desk1.jpg" alt="Pillow">
 </picture>
@@ -359,6 +363,7 @@
 
 <article class="product-component">
 <picture class="product-img">
+<source srcset="Images/shop-item-tablet2.jpg" media="(min-width: 641px) and (max-width: 1199px)">
 <source srcset="Images/shop-item-desk2.jpg" media="(min-width: 1200px)">
 	<img src="Images/shop-item-desk2.jpg" alt="Pillow">
 </picture>
@@ -381,6 +386,7 @@
 
 <article class="product-component">
 <picture class="product-img">
+<source srcset="Images/shop-item-tablet3.jpg" media="(min-width: 641px) and (max-width: 1199px)">	
 <source srcset="Images/shop-item-desk3.jpg" media="(min-width: 1200px)">
 	<img src="Images/shop-item-desk3.jpg" alt="Pillow">
   </picture>
